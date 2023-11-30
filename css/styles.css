@@ -15,6 +15,7 @@
     --text-color:#fff;
     --secound-color:#c6c9d8bf;
     --main-color:#f9004d;
+    --sec-font:4.6rem;
     --big-font:5.2rem;
     --h2-font:4.0rem;
     --p-font:1.0rem;
@@ -48,6 +49,9 @@ header{
 }
 .navbar li{
     position: relative;
+}
+.navbar li::after{
+    color: var(--main-color);
 }
 .navbar a{
     color: var(--text-color);
@@ -93,7 +97,7 @@ header{
 }
 .h-btn:hover{
     transform: translateY(1px);
-    background: var(--secound-bg-color); 
+    background: var(--text-color); 
     color: var(--main-color);
 
 }
@@ -113,7 +117,7 @@ section{
 }
 .home-text h1{
     margin: 10px 0px 10px;
-    font-size: var(--big-font);
+    font-size: var(--sec-font);
 
 }
 span{
@@ -266,10 +270,10 @@ header.sticky{
 .row:hover{
     transform: translateY(-8px);
 }
-.portifolio{
+.projects{
     background: var(--secound-bg-color)
 }
-.portifolio-content{
+.projects-content{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, auto));
     grid-gap: 2rem;
@@ -305,12 +309,6 @@ header.sticky{
     grid-template-columns: repeat(2, 2fr);
     align-items: center;
     grid-gap: 3rem;
-}
-.contact-img img{
-    max-width: 60%;
-    width: 700px;
-    height: 550px;
-    border-radius: 10px;
 }
 .contact-form h2{
     font-size: var(--h2-font);
@@ -354,11 +352,30 @@ form textarea{
     text-transform: uppercase;
 }
 .contact-form form .send:hover{
-    transform: translateY(-8px);
+    transform: translateY(-2px);
     cursor: pointer;
-    color:var(--secound-bg-color);
-    background: var(--secound-color);
+    color:var(--text-color);
+    background: var(--bg-color);
+    border: 2px solid var(--main-color);
+
 }
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px; 
+}
+.social-icons h2 {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    margin: 0 20px; 
+    font-size: 30px; 
+    color:var(--main-color); 
+    text-decoration: none;
+}
+
 .footer{
     text-align: center;
     background: var(--secound-bg-color);
@@ -366,7 +383,7 @@ form textarea{
 }
 .footer p{
     font-size: 15px;
-    color: var(--secound-color);
+    color: var(--text-color);
     letter-spacing: 1px;
 
 }
