@@ -117,6 +117,7 @@ section{
 }
 .home-text h1{
     margin: 10px 0px 10px;
+    color: var(--text-color);
     font-size: var(--sec-font);
 
 }
@@ -387,6 +388,23 @@ form textarea{
     letter-spacing: 1px;
 
 }
+.thanks-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #666;
+    margin-top: 10px;
+}
+
 @media (max-width:1300px){
     header{
         padding: 15px 5%;
@@ -410,14 +428,14 @@ form textarea{
 
 @media (max-width: 990px) {
     .home{
-        height: 80vh;
+        height: 10vh;
     }
     #menu-icon{
         display: initial;
     }
     .navbar{
         position: absolute;
-        top: 100%;
+        top: 1%;
         left: 0;
         right: 0;
         flex-direction: column;
@@ -428,7 +446,7 @@ form textarea{
     .navbar a{
         display: block;
         padding: 1.1rem;
-        margin: 1.3rem;
+        margin: 1rem;
         border-left: 2px solid var(--secound-color);
     }
     .navbar a:hover{
